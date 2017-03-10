@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="webform.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <meta charset="UTF-8">
+
+  </head>
+  <body>
+
+    <div id="container"><!-- Start main container -->
+        <div id="header">
+          <!--logo class-->
+          <div class="logo">
+          <img src="img/logo.jpg" alt="logo" height="100px" width="">
+          </div>
+          <div class="welcometext">
+          <p>Welcome to Heirloom Deliveries</p>
+        </div>
+
+        <div id="site-navigation">
+          <ul>
+
+            <li><a href="Register.html">Register</a></li>
+              <li>
+
+                <form class="register" name="loginForm">
+                  <input type="email" name = "email" placeholder="Email address">
+       			     <input type="password" name = "password" placeholder="Password">
+       			     <button onclick="validate()">Sign In</button>
+              </form>
+          </ul>
+        </div>
+
+        </div>
+          <div class="navbar">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="orderform.html">Check Out</a></li>
+            </ul>
+
+          </div>
+              <div id="maincontent">
+                <img class="mySlides" src="img/Sallad.jpg">
+                <img class="mySlides" src="img/heirloomcorn.jpg">
+                <img class="mySlides" src="img/raddish.jpg">
+                <img class="mySlides" src="img/Tomato.jpg">
+                <img class="mySlides" src="img/saladbox.jpg">
+
+              </div>
+
+              <div id="footer">
+              <div class="contact"><h3>Contact</h3>  <br>Pre Order:<br>01 6636383<br><br>Email:<br>Heirloom@gmail.com<br><br>Address:<br>Heirloom Delivery<br>27 baggot street lower<br><br>
+              </div>
+              <div class="openingtimes"><h3>Opening Hours</h3><br>Mon-Fri:<br>12-22pm<br>(Last kitchen orders at 21:45)<br><br>Saturday:<br>13-22pm<br>(Last kitchen orders at 21:45)<br><br>Sunday:<br>16-22pm<br>(Last kitchen orders at 21:45)
+              </div>
+              <div class="networking"><h3>Social Networking</h3>
+                <ul class="facebook">
+                <i class="fa fa-facebook-square fa-2x " aria-hidden="true"></i><br>
+                </ul>
+
+
+                <ul class="twitter">
+              <i class="fa fa-twitter fa-2x " aria-hidden="true"></i><br>
+                </ul>
+              </div>
+              </div>
+
+
+
+
+      </div><!-- end main container
+
+<!--code for the carousel below was taken from "http://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_slideshow_rr"-->
+      <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}
+          x[myIndex-1].style.display = "block";
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+      </script>
+
+</html>

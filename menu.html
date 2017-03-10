@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="webform.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <title>title</title>
+  </head>
+  <body>
+    <div id="container">
+        <div id="header">
+          <!--logo class-->
+          <div class="logo">
+          <img src="img/logo.jpg" alt="logo" height="100px" width="">
+          </div>
+          <div class="welcometext">
+          <p>Welcome to Heirloom Delivery</p>
+        </div>
+
+        <div id="site-navigation">
+          <ul>
+            <li><a href="#">Sign In</a></li>
+            <li><a href="Register.html">Register</a></li>
+          </ul>
+          </div>
+</div>
+          <div class="navbar">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="orderform.html">Check Out</a></li>
+            </ul>
+          </div>
+              <div id="maincontent">
+                <br>
+                <br>
+                <br>
+                <div id="box">
+
+
+                  <div id="option1">
+                    <div class="imgWrap">
+                      <img src= "img/sallad1.jpg" alt="#" height="175px" width="237px">
+                      <p class="imgDescription">Option 1<br><br>Caprese Salad<br><br>Heirloom Tomatoes with Irish buffolo Mozzerella & fresh basil<br><br>€4.99</p>
+                    </div>
+
+
+                  </div>
+
+                  <div id="option2">
+                    <div class="imgWrap">
+                    <img src= "img/sallad2.jpg" alt="#" height="175px" width="237px">
+                    <p class="imgDescription">Option 2<br><br>Quinao & Chickpea Salad<br><br>Price €4.99</p>
+                    </div>
+                  </div>
+
+                  <div id="option3">
+                    <div class="imgWrap">
+                    <img src= "img/sallad3.jpg" alt="#" height="175px" width="237px">
+                    <p class="imgDescription">Option 4<br><br>Beetroot & Goats Cheese Salad<br><br>€4.99</p>
+                    </div>
+                  </div>
+
+                  <div id="option4">
+                    <div class="imgWrap">
+                    <img src= "img/sallad4.jpg" alt="#" height="175px" width="237px">
+                    <p class="imgDescription">Option 3<br><br>Superfood Salad<br><br>€4.99</p>
+                    </div>
+                  </div>
+
+                  <div id="option5">
+                    <div class="imgWrap">
+                    <img src= "img/sallad5.jpg" alt="#" height="175px" width="237px">
+                    <p class="imgDescription">Option 5<br><br>Roast Pepper, beetroot, rainbow carrot shavings & wallnut salad.<br><br>€4.99 </p>
+                    </div>
+                  </div>
+
+                  <div id="option6">
+                    <div class="imgWrap">
+                    <img src= "img/sallad6.jpg" alt="#" height="175px" width="237px">
+                    <p class="imgDescription">Option 6<br><br>Stuffed Roast Pepper, Bulgar wheat, heirloom tomato, fresh parsley sallad.<br><br>€4.99.</p>
+                    </div>
+                  </div>
+
+                  <div id="option7">
+                    <div class="imgWrap">
+                    <img src= "img/sallad7.jpg" alt="#" height="175px" width="237px">
+                    <p class="imgDescription">Option 8<br><br>Heirloom Raddish, segmented orange, pea shoot sallad<br><br>€4.99.</p>
+                    </div>
+                  </div>
+
+                  <div id="option8">
+                    <div class="imgWrap">
+                    <img src= "img/sallad8.jpg" alt="#" height="175px" width="237px">
+                    <p class="imgDescription"><br>Option 7<br><br>Heirloom Raddish, rocket, garlic, apple, parmesan salad<br><br>€4.99</p>
+                    </div>
+                  </div>
+
+                  <br>
+                  <br>
+                  <br>
+                  </div>
+
+                </div>
+                <div id="thumbnail3">
+                    <form name="heirloomDelivery" onsubmit ="submitFunction()">
+                        <div class="formtext">
+                          <br>
+                        <legend><h1>Please Choose your salad option:</h1></legend>
+                      <div class="menuleft">
+                        <br>
+                      <div>
+                      <h3>Option 1, Classic caprese Salad.</h3>
+                      <input type="checkbox" name="salad" onclick="capreseSalad()" value="">
+                      <div id="panel2">
+                      	<br>
+                        550 Calories, contains nuts, Dairy, Pesto & Olive Oil Dressing.
+                          <br><br>
+                      	</div>
+                      </div>
+                      <div>
+                        <div>
+                        <h3>Option 2, Quinoa,Chickpea,bulgar wheat salad.</h3>
+                        <input type="checkbox" name="yes2" onclick="chickPea()" value="">
+                        <div id="panel3">
+                            <br>
+                            550 Calories, contains nuts, Gluten, Vegan Option.
+                            <br><br>
+                          </div>
+                        </div>
+                        <div>
+                        <h3>Option 3, Super food salad.</h3>
+                        <input type="checkbox" name="yes" onclick="superFood()" value="">
+                        <div id="panel4">
+                            <br>
+                            450 Calories, contains lupin, Seeds, Pomegranate. Vegan Option.
+                          <br><br>
+                          </div>
+                        </div>
+                        <div>
+                        <h3>Option 4, Beetroot Goats Cheese, mix baby leaf salad.</h3>
+                        <input type="checkbox" name="beets" onclick="beetroot()" value="">
+                        <div id="panel5">
+                            <br>
+                            550 Calories, contains Sesame, Balsamic glaze dressing.
+
+                            <br><br>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="menuright">
+
+                        <h3>Option 5, Roast Pepper,crunchy rainbow carrot salad.</h3>
+                        <input type="checkbox" name="carrot" onclick="rainbow()" value="">
+                        <div id="panel6">
+                            <br>
+                            600 Calories, Contains Dairy, Vegan Option.
+
+                            <br><br>
+                          </div>
+                          <h3>Option 6, Stuffed Pepper, Bulgar wheat, heirloom tomato, fresh parsley salad.</h3>
+                          <input type="checkbox" name="bulgarwheat" onclick="bulgar()" value="">
+                          <div id="panel7">
+                              <br>
+                              600 Calories, contains nuts, Vegan Option.
+                              <br><br>
+                            </div>
+                            <h3>Option 7, Heirloom Raddish, rocket, garlic, apple, parmesan salad.</h3>
+                            <input type="checkbox" name="hraddish" onclick="raddish()" value="">
+                            <div id="panel8">
+                                <br>
+                                550 Calories, contains eggs. Citrus dressing.
+                                <br><br>
+
+                            </div>
+                            <h3>Option 8, Pink Raddish,segmented orange, pea shoot salad.</h3>
+                              <input type="checkbox" name="orange" onclick="peashoot()" value="">
+                                <div id="panel9">
+                                    <br>
+                                    350 Calories, contains soya, Vegan Option.<br><br>
+
+                              </div>
+                      </div>
+                      </div>
+                        <br>
+                        <br>
+                        <br>
+
+                        How many Sallads would you like to order?
+                        <br>
+                        <br>
+                        <select id="amountWanted" onchange="checkStock()">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+
+                          <div id="panel1">
+                            <br>
+                            <p>Special offer buy four sallads get 4 free super juice! </p>
+                          </div>
+                          <br>
+
+
+
+                          <br>
+                          Would you like delivery? (Delivery charge €5.00)
+                          <br>
+                          <input type="checkbox" name="express" onclick="addExpress()" value="">Yes
+                          <br>
+                          <br>
+                          <button onclick="myFunction()">Submit</button>
+                          <br>
+                          <br>
+                    </div>
+                    </div>
+                    </div>
+              <br>
+              <br>
+              <div id="footer">
+              <div class="contact"><h3>Contact</h3> Pre Order:<br>01 6636383<br><br>Email:<br>Heirloom@gmail.com<br><br>Address:<br>Heirloom Delivery<br>27 baggot street lower<br><br>
+              </div>
+              <div class="openingtimes"><h3>Opening Hours</h3><br>Mon-Fri:<br>12-22pm<br>(Last kitchen orders at 21:45)<br><br>Saturday:<br>13-22pm<br>(Last kitchen orders at 21:45)<br><br>Sunday:<br>16-22pm<br>(Last kitchen orders at 21:45)
+              </div>
+              <div class="networking"><h3>Social Networking</h3>
+                <ul class="facebook">
+                <i class="fa fa-facebook-square fa-2x " aria-hidden="true"></i><br>
+                </ul>
+                <ul class="twitter">
+              <i class="fa fa-twitter fa-2x " aria-hidden="true"></i><br>
+                </ul>
+              </div>
+              </div>
+            </div>
+          </body>
+</html>
